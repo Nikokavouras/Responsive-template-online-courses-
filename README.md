@@ -1,7 +1,7 @@
 RESPONSIVE TEMPLATE (Mobile first)
 
 ABOUT THE PROJECT
-  - This template represents the Home Page of a learn company with online courses.
+  - This template represents the Home Page of a company with online courses.
 
 TECHNOLOGIES
   - Html5
