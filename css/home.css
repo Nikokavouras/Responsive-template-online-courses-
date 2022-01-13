@@ -1,0 +1,821 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Padauk:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0172bd;
+  --primary-transition: 0.2s;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Mukta", sans-serif;
+  font-family: "Padauk", sans-serif;
+}
+
+.header-section {
+  background-color: var(--primary-color);
+}
+
+.header-section .container {
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em;
+}
+
+.header-section .container .logo-text-div {
+  color: white;
+  line-height: 1.5em;
+}
+
+.header-section .container .logo-text-div a {
+  color: white;
+}
+
+.header-section .container .logo-text-div span {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.header-section .container .open-icon-button {
+  border-radius: 0.2em;
+  padding: 0.6em;
+  outline: none;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.header-section .container .close-icon-button {
+  display: none;
+  border-radius: 0.2em;
+  padding: 0.6em;
+  outline: none;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.header-section .container .navigation-nav {
+  display: none;
+}
+
+.header-section .container .navigation-nav.mobile-navigation {
+  display: block;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  margin-top: 19em;
+  background-color: white;
+}
+
+.header-section .container .navigation-nav.mobile-navigation ul li {
+  border-top: 0.1em solid rgba(99, 97, 97, 0.123);
+  padding: 0.5em;
+  text-transform: capitalize;
+}
+
+.header-section .container .navigation-nav.mobile-navigation ul li a {
+  margin-left: 1em;
+  color: black;
+  text-align: left;
+}
+
+.header-section .container .navigation-nav.mobile-navigation ul li a:hover {
+  color: var(--primary-color);
+  -webkit-transition: var(--primary-transition);
+  transition: var(--primary-transition);
+}
+
+.hero-section {
+  background: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25em;
+}
+
+.hero-section .container {
+  margin: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  text-align: center;
+}
+
+.hero-section .container .header-text-div {
+  color: white;
+}
+
+.hero-section .container .header-text-div h1 {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 0.8em;
+  text-transform: capitalize;
+}
+
+.hero-section .container .paragraph-text-div {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.hero-section .container .paragraph-text-div p {
+  color: white;
+}
+
+.hero-section .container a {
+  color: var(--primary-color);
+  margin-top: 1em;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 2em;
+  width: 11em;
+  font-size: 0.9em;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+.hero-section .container a:hover {
+  opacity: 90%;
+  -webkit-transition: var(--primary-transition);
+  transition: var(--primary-transition);
+}
+
+.icons-section {
+  margin-top: -2em;
+}
+
+.icons-section img {
+  width: 3em;
+}
+
+.icons-section .container {
+  width: 100%;
+  margin: auto;
+}
+
+.icons-section .container .actionableTraining-div,
+.icons-section .container .interestingQuizzes-div,
+.icons-section .container .premiumMaterial-div {
+  width: 90%;
+  padding: 1em;
+  margin: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 0.3em;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0em 0.5em 1em 0.5em rgba(0, 0, 0, 0.151);
+          box-shadow: 0em 0.5em 1em 0.5em rgba(0, 0, 0, 0.151);
+}
+
+.icons-section .container .actionableTraining-div span,
+.icons-section .container .interestingQuizzes-div span,
+.icons-section .container .premiumMaterial-div span {
+  opacity: 80%;
+  margin-top: 0.8em;
+}
+
+.icons-section .container div:not(:first-child) {
+  margin-top: 2em;
+}
+
+.courses-section {
+  margin-top: 5em;
+}
+
+.courses-section .container {
+  padding: 1em;
+}
+
+.courses-section .container .text-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1em;
+  width: 80%;
+  margin: auto;
+}
+
+.courses-section .container .text-div h1 {
+  text-transform: capitalize;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.courses-section .container .courses-div {
+  padding: 0.5em;
+}
+
+.courses-section .container .courses-div .course-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.096);
+  border-left: 0.1em solid rgba(0, 0, 0, 0.096);
+  border-right: 0.1em solid rgba(0, 0, 0, 0.096);
+  margin-top: 2em;
+}
+
+.courses-section .container .courses-div .course-div h1 {
+  text-align: left;
+  margin: 0.3em;
+  margin-top: 0.8em;
+  width: 90%;
+  line-height: 1em;
+}
+
+.courses-section .container .courses-div .course-div p {
+  text-align: left;
+  margin: 0.3em;
+  margin-top: 0.8em;
+  width: 90%;
+  line-height: 1em;
+}
+
+.courses-section .container .courses-div .course-div p:last-child {
+  text-align: right;
+  margin-top: 1em;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.courses-section .container .courses-div .course-div a {
+  background-color: var(--primary-color);
+  width: 90%;
+  text-align: center;
+  padding: 0.3em;
+  color: white;
+  border-radius: 0.4em;
+  margin-top: 1em;
+}
+
+.courses-section .container .courses-div .course-div span:first-child {
+  background-color: #5cb85c;
+  text-transform: capitalize;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  padding: 0.5em;
+  height: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-right: 80%;
+  margin-top: 0.8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.courses-section .container .courses-div .course-div .complete-bar-span {
+  background-color: rgba(128, 128, 128, 0.274);
+  width: 90%;
+  margin-top: 1em;
+  border-radius: 2em;
+  height: 0.4em;
+}
+
+.professional-section {
+  margin-top: 5em;
+}
+
+.professional-section .container {
+  padding: 1em;
+}
+
+.professional-section .container .text-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1em;
+  width: 80%;
+  margin: auto;
+}
+
+.professional-section .container .text-div h1 {
+  text-transform: capitalize;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.professional-section .container .professionals-div {
+  padding: 0.5em;
+  margin-top: 2em;
+}
+
+.professional-section .container .professionals-div .founder-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.professional-section .container .professionals-div .founder-div img {
+  width: 70%;
+}
+
+.professional-section .container .professionals-div .founder-div p {
+  margin-top: 1.8em;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+}
+
+.professional-section .container .professionals-div #accordion-div {
+  margin-top: 3em;
+  width: 100%;
+}
+
+.professional-section .container .professionals-div #accordion-div ul li button {
+  background-color: white;
+  cursor: pointer;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: left;
+}
+
+.professional-section .container .professionals-div #accordion-div ul li button::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f35a";
+  color: rgba(32, 118, 230, 0.541);
+  font-weight: 900;
+  font-size: 22px;
+  float: left;
+  margin-right: 0.7em;
+}
+
+.professional-section .container .professionals-div #accordion-div ul li .accodion-content-div {
+  padding: 0.3em;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+}
+
+.professional-section .container .professionals-div #accordion-div ul li button.active::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f358";
+  font-weight: 900;
+  font-size: 22px;
+  float: left;
+  margin-right: 0.7em;
+}
+
+.images-section {
+  margin-top: 2em;
+}
+
+.images-section .container {
+  padding: 1em;
+}
+
+.images-section .container .text-div {
+  text-transform: capitalize;
+  margin-bottom: 2em;
+}
+
+.images-section .container .text-div h1 {
+  text-align: center;
+}
+
+.images-section .container .images-div {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.images-section .container .images-div img {
+  width: 10em;
+}
+
+.testimonials-section {
+  margin-top: 7em;
+}
+
+.testimonials-section .container .text-div {
+  text-transform: capitalize;
+  margin-bottom: 2em;
+}
+
+.testimonials-section .container .text-div h1 {
+  text-align: center;
+  line-height: 1em;
+}
+
+.testimonials-section .container .testimonials-div {
+  padding: 1em;
+}
+
+.testimonials-section .container .testimonials-div .testimonial-div {
+  border-radius: 0.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 1.5em;
+  -webkit-box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.06);
+}
+
+.testimonials-section .container .testimonials-div .testimonial-div p {
+  opacity: 70%;
+}
+
+.testimonials-section .container .testimonials-div .testimonial-div .profile-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.testimonials-section .container .testimonials-div .testimonial-div .profile-div img {
+  border-radius: 100%;
+  width: 4em;
+}
+
+.testimonials-section .container .testimonials-div .testimonial-div .profile-div span {
+  line-height: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1em;
+}
+
+.testimonials-section .container .testimonials-div .testimonial-div .profile-div span h1 {
+  opacity: 70%;
+  font-size: 1em;
+}
+
+.testimonials-section .container .testimonials-div .testimonial-div .profile-div span p {
+  opacity: 70%;
+  font-size: 0.8em;
+}
+
+.testimonials-section .container .testimonials-div .testimonial-div:not(:first-child) {
+  margin-top: 1.5em;
+}
+
+.footer-section {
+  background-color: var(--primary-color);
+  margin-top: 5em;
+}
+
+.footer-section .container {
+  padding: 1.5em;
+}
+
+.footer-section .container .text-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  margin-bottom: 2em;
+  color: white;
+  text-align: center;
+}
+
+.footer-section .container .text-div h1 {
+  text-align: center;
+  line-height: 1em;
+  margin-top: 2em;
+}
+
+.footer-section .container .text-div p {
+  margin-top: 3em;
+}
+
+.footer-section .container .text-div a {
+  margin-top: 3em;
+  padding: 1em;
+  color: var(--primary-color);
+  border-radius: 10em;
+  border: none;
+  cursor: pointer;
+  width: 13em;
+  text-transform: capitalize;
+  font-size: 0.9em;
+  background-color: white;
+  font-weight: bold;
+}
+
+.footer-section hr {
+  color: grey;
+}
+
+.footer-section .copyright-div {
+  padding: 1em;
+}
+
+.footer-section .copyright-div p {
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 576px) {
+  .courses-section .container .courses-div .course-div {
+    width: 60%;
+    margin: auto;
+    margin-top: 2em;
+  }
+  .courses-section .container .courses-div .course-div span:first-child {
+    background-color: #5cb85c;
+    text-transform: capitalize;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 0.5em;
+    height: 1.8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    margin-right: 55%;
+    margin-top: 0.8em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .professional-section .container .professionals-div .founder-div img {
+    width: 25em;
+  }
+  .professional-section .container .professionals-div #accordion-div {
+    margin: auto;
+    margin-top: 3em;
+  }
+  .testimonials-section .container .testimonials-div {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header-section .container .open-icon-button {
+    display: none !important;
+  }
+  .header-section .container .close-icon-button {
+    display: none !important;
+  }
+  .header-section .container .navigation-nav.mobile-navigation {
+    display: none !important;
+  }
+  .header-section .container .navigation-nav {
+    display: block;
+  }
+  .header-section .container .navigation-nav ul li {
+    float: left;
+    margin-left: 1.5em;
+  }
+  .header-section .container .navigation-nav ul li a {
+    color: white;
+    text-transform: capitalize;
+  }
+  .hero-section .container {
+    width: 50%;
+  }
+  .icons-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 58em;
+  }
+  .icons-section .container .actionableTraining-div,
+  .icons-section .container .interestingQuizzes-div,
+  .icons-section .container .premiumMaterial-div {
+    width: 18em;
+  }
+  .icons-section .container div:not(:first-child) {
+    margin-top: 0;
+  }
+  .courses-section .container .courses-div .course-div {
+    width: 30em;
+    margin: auto;
+    margin-top: 2em;
+  }
+  .courses-section .container .courses-div .course-div span:first-child {
+    background-color: #5cb85c;
+    text-transform: capitalize;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 0.5em;
+    height: 1.8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    margin-right: 30em;
+    margin-top: 0.8em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .professional-section .container .professionals-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    margin-top: 3em;
+    width: 90%;
+  }
+  .professional-section .container .professionals-div .founder-div {
+    width: 50%;
+  }
+  .professional-section .container .professionals-div .founder-div img {
+    width: 25em;
+  }
+  .professional-section .container .professionals-div #accordion-div {
+    width: 50%;
+    margin: auto;
+    margin-top: 3em;
+  }
+  .testimonials-section .container .testimonials-div {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonials-section .container .testimonials-div .testimonial-div {
+    margin: 1em;
+  }
+  .testimonials-section .container .testimonials-div .testimonial-div:not(:first-child) {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .courses-section .container {
+    width: 100%;
+  }
+  .courses-section .container .courses-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70em;
+    margin: auto;
+  }
+  .courses-section .container .courses-div .course-div {
+    width: 20em;
+    margin: auto;
+    margin-top: 2em;
+  }
+  .courses-section .container .courses-div .course-div span:first-child {
+    background-color: #5cb85c;
+    text-transform: capitalize;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 1px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 0.5em;
+    height: 1.8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    margin-right: 20em;
+    margin-top: 0.8em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .professional-section .container .professionals-div {
+    width: 75em;
+  }
+  .testimonials-section .container .testimonials-div {
+    width: 70em;
+  }
+}
+/*# sourceMappingURL=home.css.map */
